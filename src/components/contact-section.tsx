@@ -82,7 +82,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Proprietor</h4>
-                    <p className="text-sm text-muted-foreground">Smt. Savitha Rathod</p>
+                    <p className="text-sm text-muted-foreground">Ms. Savitha Rathod</p>
                   </div>
                 </CardContent>
               </Card>

@@ -1,0 +1,5 @@
+- [ ] Update header.tsx to import useTheme from "next-themes" and the light logo
+- [ ] Add logic to conditionally render the logo based on theme
+- [ ] Update header background className to be solid for both themes, with conditional backdrop-blur for light theme when scrolled
+- [ ] Update mobile menu background to solid
+- [ ] Test the changes by toggling theme and scrolling

@@ -4,60 +4,60 @@
 @tailwind utilities;
 
 /* Ambitronix EDMA Design System
-Based on logo colors: Teal/Cyan #00BBD4, Neon Green #7AF028, Deep Blue #0077A6
+Based on logo colors: Electric Blue #0096FF, Neon Green #32FF64
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
     /* Ambitronix Brand Colors */
-    --primary-teal: 188 100% 42%;        /* #00BBD4 - Primary teal/cyan */
-    --accent-green: 86 93% 58%;          /* #7AF028 - Accent neon green */
-    --deep-blue: 200 100% 33%;           /* #0077A6 - Deep blue */
-    --silver-text: 240 4% 80%;           /* #C8C9CC - Silver/metal text */
+    --primary-teal: 204 100% 50%;        /* #0096FF - Electric Blue */
+    --accent-green: 128 100% 60%;          /* #32FF64 - Neon Green */
+    --deep-blue: 204 100% 50%;           /* #0096FF - Electric Blue */
+    --silver-text: 0 0% 40%;           /* #666666 - Medium Grey */
     --tech-dark: 0 0% 0%;                /* #000000 - Dark background */
-    --clean-light: 220 33% 98%;          /* #F8F9FB - Light background */
+    --clean-light: 0 0% 100%;          /* #FFFFFF - Pure White */
 
     /* Light Theme */
     --background: var(--clean-light);
-    --foreground: 240 10% 3.9%;
-    
+    --foreground: 0 0% 20%; /* #333333 - Dark Grey */
+
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    
+    --card-foreground: 0 0% 20%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    
+    --popover-foreground: 0 0% 20%;
+
     --primary: var(--primary-teal);
     --primary-foreground: 0 0% 98%;
-    
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
-    
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
-    
+
+    --secondary: 0 0% 96%; /* #F5F5F5 - Very Light Grey */
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%; /* #666666 - Medium Grey */
+
     --accent: var(--accent-green);
-    --accent-foreground: 240 10% 3.9%;
-    
+    --accent-foreground: 0 0% 20%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
     --ring: var(--primary-teal);
     
     --radius: 0.75rem;
 
     /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-teal)), hsl(var(--deep-blue)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-teal)), hsl(var(--accent-green)));
     --gradient-accent: linear-gradient(90deg, hsl(var(--accent-green)), hsl(var(--primary-teal)));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(220 20% 96%));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
 
     /* Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(var(--primary-teal) / 0.2);
     --shadow-glow: 0 0 40px hsl(var(--accent-green) / 0.3);
-    --shadow-card: 0 4px 6px -1px hsl(220 13% 91% / 0.1), 0 2px 4px -1px hsl(220 13% 91% / 0.06);
+    --shadow-card: 0 4px 6px -1px hsl(var(--border) / 0.1), 0 2px 4px -1px hsl(var(--border) / 0.06);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

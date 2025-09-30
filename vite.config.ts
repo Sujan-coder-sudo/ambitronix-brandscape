@@ -15,4 +15,9 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+  define: {
+    "process.env": {},
+  },
+// --- FIX START HERE ---
+})); // 1. Closes the object passed to defineConfig. 2. Closes the defineConfig function call.
+// --- FIX END HERE ---

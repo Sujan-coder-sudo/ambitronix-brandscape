@@ -107,7 +107,7 @@ export function AboutSection() {
               <div>
                 <h4 className="text-lg font-semibold text-foreground mb-4">Company Background</h4>
                 <p className="text-muted-foreground mb-4">
-                  M/s. Ambitronix is a proprietary concern promoted by Smt. Savitha Rathod. 
+                  M/s. Ambitronix is a proprietary concern promoted by Ms. Savitha Rathod. 
                   The proposed industry focuses on Electronic Design, Manufacturing, and Automation (EDMA) 
                   with a requirement of 2.00 acres at Bengaluru Aerospace SEZ Industrial Area.
                 </p>
@@ -130,7 +130,7 @@ export function AboutSection() {
               <div>
                 <h4 className="text-lg font-semibold text-foreground mb-4">Promoter Profile</h4>
                 <p className="text-muted-foreground mb-4">
-                  The proprietor, Smt. Savitha Rathod, is a women entrepreneur aged 43 years with M.Com Graduate 
+                  The proprietor, Ms. Savitha Rathod, is a women entrepreneur aged 43 years with M.Com Graduate 
                   qualifications. She belongs to Scheduled Caste Category and her family is financially sound 
                   for implementation of the proposed project.
                 </p>
