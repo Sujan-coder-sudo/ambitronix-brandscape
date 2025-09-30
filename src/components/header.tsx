@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Menu, X } from "lucide-react"
-import logoAmbitronix from "@/assets/logo-ambitronix.png"
+import logoAmbitronix from "@/assets/logo-ambitronix-icon.png"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -49,9 +49,9 @@ export function Header() {
             <img 
               src={logoAmbitronix} 
               alt="Ambitronix EDMA Logo" 
-              className="h-8 w-auto"
+              className="h-10 w-10"
             />
-            <div className="hidden sm:block">
+            <div>
               <span className="text-lg font-semibold text-foreground">Ambitronix</span>
               <span className="text-xs text-muted-foreground block -mt-1">EDMA</span>
             </div>

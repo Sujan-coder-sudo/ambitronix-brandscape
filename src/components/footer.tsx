@@ -10,7 +10,7 @@ import {
   Twitter,
   Globe
 } from "lucide-react"
-import logoAmbitronix from "@/assets/logo-ambitronix.png"
+import logoAmbitronix from "@/assets/logo-ambitronix-icon.png"
 
 export function Footer() {
   const scrollToTop = () => {
@@ -38,7 +38,7 @@ export function Footer() {
                 <img 
                   src={logoAmbitronix} 
                   alt="Ambitronix EDMA Logo" 
-                  className="h-8 w-auto"
+                  className="h-8 w-8"
                 />
                 <div>
                   <span className="text-lg font-semibold text-foreground">Ambitronix</span>
