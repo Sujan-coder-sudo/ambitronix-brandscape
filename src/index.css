@@ -11,53 +11,53 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Ambitronix Brand Colors */
-    --primary-teal: 188 100% 42%;        /* #00BBD4 - Primary teal/cyan */
-    --accent-green: 86 93% 58%;          /* #7AF028 - Accent neon green */
-    --deep-blue: 200 100% 33%;           /* #0077A6 - Deep blue */
-    --silver-text: 240 4% 80%;           /* #C8C9CC - Silver/metal text */
-    --tech-dark: 0 0% 0%;                /* #000000 - Dark background */
-    --clean-light: 220 33% 98%;          /* #F8F9FB - Light background */
+    --electric-blue: 208 100% 50%;       /* #0096FF - Electric Blue */
+    --neon-green: 134 100% 65%;          /* #32FF64 - Neon Green */
+    --charcoal: 0 0% 20%;                /* #333333 - Dark Grey/Charcoal */
+    --medium-grey: 0 0% 40%;             /* #666666 - Medium Grey */
+    --pure-white: 0 0% 100%;             /* #FFFFFF - Pure White */
+    --subtle-grey: 0 0% 96%;             /* #F5F5F5 - Very Light Grey */
 
     /* Light Theme */
-    --background: var(--clean-light);
-    --foreground: 240 10% 3.9%;
+    --background: var(--pure-white);
+    --foreground: var(--charcoal);
     
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: var(--pure-white);
+    --card-foreground: var(--charcoal);
     
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: var(--pure-white);
+    --popover-foreground: var(--charcoal);
     
-    --primary: var(--primary-teal);
-    --primary-foreground: 0 0% 98%;
+    --primary: var(--electric-blue);
+    --primary-foreground: var(--pure-white);
     
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
+    --secondary: var(--subtle-grey);
+    --secondary-foreground: var(--charcoal);
     
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
+    --muted: var(--subtle-grey);
+    --muted-foreground: var(--medium-grey);
     
-    --accent: var(--accent-green);
-    --accent-foreground: 240 10% 3.9%;
+    --accent: var(--neon-green);
+    --accent-foreground: var(--charcoal);
     
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: var(--pure-white);
     
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: var(--primary-teal);
+    --border: var(--subtle-grey);
+    --input: var(--subtle-grey);
+    --ring: var(--electric-blue);
     
     --radius: 0.75rem;
 
     /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-teal)), hsl(var(--deep-blue)));
-    --gradient-accent: linear-gradient(90deg, hsl(var(--accent-green)), hsl(var(--primary-teal)));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(220 20% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--neon-green)));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--neon-green)), hsl(var(--electric-blue)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--pure-white)), hsl(var(--subtle-grey)));
 
     /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary-teal) / 0.2);
-    --shadow-glow: 0 0 40px hsl(var(--accent-green) / 0.3);
-    --shadow-card: 0 4px 6px -1px hsl(220 13% 91% / 0.1), 0 2px 4px -1px hsl(220 13% 91% / 0.06);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--electric-blue) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--neon-green) / 0.3);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,7 +65,7 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: var(--tech-dark);
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
     
     --card: 240 10% 3.9%;
@@ -74,8 +74,8 @@ All colors MUST be HSL.
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
     
-    --primary: var(--primary-teal);
-    --primary-foreground: 240 10% 3.9%;
+    --primary: var(--electric-blue);
+    --primary-foreground: 0 0% 98%;
     
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -83,7 +83,7 @@ All colors MUST be HSL.
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
     
-    --accent: var(--accent-green);
+    --accent: var(--neon-green);
     --accent-foreground: 240 10% 3.9%;
     
     --destructive: 0 62.8% 30.6%;
@@ -91,10 +91,10 @@ All colors MUST be HSL.
     
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: var(--primary-teal);
+    --ring: var(--electric-blue);
 
     /* Dark theme gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--tech-dark)), hsl(240 10% 3.9%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0%), hsl(240 10% 3.9%));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(240 3.7% 15.9%));
     --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
   }

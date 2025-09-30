@@ -25,7 +25,6 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          teal: "hsl(var(--primary-teal))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -42,7 +41,6 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          green: "hsl(var(--accent-green))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -52,10 +50,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "deep-blue": "hsl(var(--deep-blue))",
-        "silver-text": "hsl(var(--silver-text))",
-        "tech-dark": "hsl(var(--tech-dark))",
-        "clean-light": "hsl(var(--clean-light))",
+        "electric-blue": "hsl(var(--electric-blue))",
+        "neon-green": "hsl(var(--neon-green))",
+        "charcoal": "hsl(var(--charcoal))",
+        "medium-grey": "hsl(var(--medium-grey))",
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
