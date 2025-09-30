@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Menu, X } from "lucide-react"
-import logoAmbitronix from "@/assets/logo-ambitronix-icon.png"
+import logoAmbitronix from "@/assets/Logo_PNG_Ambitronix.png"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -45,13 +45,14 @@ export function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <img 
-              src={logoAmbitronix} 
-              alt="Ambitronix EDMA Logo" 
-              className="h-10 w-10"
-            />
-          </div>
+          <div className="flex items-center justify-between h-24">
+  <img
+    src={logoAmbitronix}
+    alt="Ambitronix EDMA Logo"
+    className="h-24 w-auto sm:h-28 md:h-32 lg:h-36 xl:h-40"
+  />
+</div>
+
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
