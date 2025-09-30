@@ -34,16 +34,12 @@ export function Footer() {
           <div className="grid lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-1 space-y-4">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center">
                 <img 
                   src={logoAmbitronix} 
                   alt="Ambitronix EDMA Logo" 
                   className="h-8 w-8"
                 />
-                <div>
-                  <span className="text-lg font-semibold text-foreground">Ambitronix</span>
-                  <span className="text-xs text-muted-foreground block -mt-1">EDMA</span>
-                </div>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Industrial-scale Electronic Design, Manufacturing & Automation. 

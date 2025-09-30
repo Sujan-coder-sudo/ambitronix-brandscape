@@ -45,16 +45,12 @@ export function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src={logoAmbitronix} 
               alt="Ambitronix EDMA Logo" 
               className="h-10 w-10"
             />
-            <div>
-              <span className="text-lg font-semibold text-foreground">Ambitronix</span>
-              <span className="text-xs text-muted-foreground block -mt-1">EDMA</span>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
