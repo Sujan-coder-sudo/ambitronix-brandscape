@@ -28,7 +28,7 @@ export function HeroSection() {
 
   // Slides array (ensure these aren't undefined)
   const slides = useMemo(() => [hero1, hero2, hero3], [])
-  const AUTO_MS = 6000
+  const AUTO_MS = 2000
 
   // Preload check — logs missing images (helps debugging)
   useEffect(() => {
